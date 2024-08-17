@@ -1,5 +1,5 @@
 import { Badge } from "@mui/material";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { ShoppingCart } from "@mui/icons-material"
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
@@ -13,8 +13,8 @@ export const NavBarComponent = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <NavLink to='/' className="navbar-brand">HiperCompras</NavLink>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
@@ -26,7 +26,7 @@ export const NavBarComponent = () => {
         </div>
         <NavLink className='cart-icon' to='/carrito'>
             <Badge badgeContent={shoppingList.length} color="primary">
-                <ShoppingCartIcon />
+                <ShoppingCart />
             </Badge>
         </NavLink>
       </div>
