@@ -60,21 +60,22 @@ export const CartPage = () => {
           </tr>
           ))}
 
-<tr></tr>
-          <th><b>TOTAL: </b></th>
-          <td></td>
-          <td></td>
-          <td>${calculateTotal()}</td>
+          <tr>
+            <th><b>TOTAL: </b></th>
+            <td></td>
+            <td></td>
+            <td>${calculateTotal()}</td>
+          </tr>
+
         </tbody>
       </table>
 
       <div className="d-grid gap-2">
         <button 
-        className="btn btn-primary" 
-        type="button"
-        onClick={handlerPurchase()}>
-            Comprar
-        </button>
+          className="btn btn-primary" 
+          type="button"
+          onClick={handlerPurchase}
+          >Comprar</button>
       </div>
 
     </>
